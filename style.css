@@ -8,14 +8,14 @@ body, html {
     color: #ffdcff;
     font-family: 'Courier New', Courier, monospace;
     font-size: 24px;
-    position: relative; /* 클릭 위치 기반으로 스파크가 배치되도록 */
-    overflow: hidden; /* 스파크가 화면을 벗어나지 않도록 */
+    position: relative;
+    overflow: hidden;
 }
 
 #typing-text {
     display: inline;
     white-space: nowrap;
-    text-shadow: 2px 2px 4px rgba(212, 212, 212, 0.6); /* 글자에 그림자 추가 */
+    text-shadow: 2px 2px 4px rgba(212, 212, 212, 0.6);
 }
 
 .cursor {
@@ -23,7 +23,7 @@ body, html {
     font-size: 24px;
     color: white;
     animation: blink 1s infinite;
-    text-shadow: 2px 2px 4px rgba(186, 186, 186, 0.6); /* 커서에 그림자 추가 */
+    text-shadow: 2px 2px 4px rgba(186, 186, 186, 0.6);
 }
 
 @keyframes blink {
@@ -41,7 +41,6 @@ body, html {
     background-color: white;
 }
 
-/* 스파크 애니메이션 스타일 */
 .spark {
     position: absolute;
     width: 20px;

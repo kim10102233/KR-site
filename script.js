@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!isDeleting) {
             if (currentWordIndex < textArray.length - 1) {
                 isDeleting = true;
-                setTimeout(typeText, 100);
+                setTimeout(Meow, 100);
             }
         } else {
             currentWordIndex++;
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 currentWordIndex = 0;
             }
             isDeleting = false;
-            setTimeout(typeText, 100);
+            setTimeout(Meow, 100);
         }
     }
 
@@ -64,8 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         spark.style.setProperty('--x', `${Math.random() * 100 - 50}px`);
         spark.style.setProperty('--y', `${Math.random() * 100 - 50}px`);
-
-        // 일정 시간 후 스파크 제거
         setTimeout(() => {
             spark.remove();
         }, 1000);
